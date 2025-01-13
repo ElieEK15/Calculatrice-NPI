@@ -1,0 +1,146 @@
+<style>body {
+	margin: 0; 
+	padding: 0;
+	font-family: montserrat;
+}
+nav {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 100px;
+	color: #ffffff;
+    background: #002077;
+}
+.logo {
+	font-size: 40px;
+	color: #355fd3;
+	padding: 0 15px;
+}
+.menu ul li {
+	display: inline-block;
+	margin: 0 15px;
+}
+.menu ul li a {
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: montserrat;
+	color: #355fd3;
+	padding: 5px 15px;
+}
+.menu ul li a:hover{
+    background: #f3b480;
+}
+.socials a {
+	text-decoration: none;
+	background: green;
+	color: #fff;
+	padding: 10px 35px;
+}
+.header {
+	height: 100vh;
+	background-image: linear-gradient(#fff,#fff),url(2.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.banner-text {
+	color: #002077;
+	position: absolute;
+	top: 50%;
+	left: 26%;
+	transform: translate(-50%, -50%);
+	text-align: left;
+}
+.banner-text h1 {
+	font-size: 60px;
+	margin: 0;
+}
+.banner-text p {
+	margin: 15px 0 40px;
+	color: #000000
+}
+.banner-text button {
+	background: green;
+	border: none;
+	outline: none;
+	color: #ffffff;
+	padding: 10px 30px;
+	font-size: 20px;
+	font-family: montserrat;
+	display: inline-block;
+}
+@media (max-width: 1000px) {
+	nav {
+		flex-direction: column;
+		align-items: flex;
+	}
+	.menu ul {
+		padding: 0;
+	}
+	.menu ul li {
+		margin: 0 15px 0 0;
+	}
+	.socials {
+		margin-top: 25px;
+	}
+	.banner-text {
+		left: 50%;
+		text-align: center;
+		width: 70%;
+	}
+    .banner-text h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 600px) {
+	.logo {
+		margin-top: 0;
+		font-size: 17px;
+	}
+	nav {
+		padding: 15px;
+	}
+	.menu ul li a {
+		font-size: 10px;
+        padding: 5px;
+	}
+	.socials {
+		display: none;
+	}
+	.banner-text {
+		left: 50%;
+		text-align: center;
+		width: 80%;
+	}
+    .banner-text h1 {
+        font-size: 18px;
+    }
+	.banner-text p {
+		margin: 15px 0;
+		font-size: 11px;
+	}
+    .banner-text button {
+        font-size: 12px;
+    }
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice P5</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="calculator.js"></script>
+</head>
+<body>
+</body>
+</html>
