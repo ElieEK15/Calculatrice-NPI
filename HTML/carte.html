@@ -5,6 +5,21 @@
     <title>Carte Mentale</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">    
+    <style>
+        /* Style pour centrer l'image au milieu de la page */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 100% de la hauteur de la fenêtre */
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 80%; /* Limite la taille de l'image */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
@@ -12,17 +27,22 @@
             <div class="logo">Carte Mentale</div>
             <div class="menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Page Initiale</a></li>
                     <li><a href="carte.html">Carte Mentale</a></li>
-                    <li><a href="calculatrice.html">Calculatrice</a></li>
+                    <li><a href="Calculatrice NPI/index.html">Calculatrice</a></li>
                     <li><a href="eleves.html">Eleves</a></li>
-			    </ul>
+                </ul>
+            </div>
         </nav>
         <div class="banner-text">
-            <h1><br></h1>
-            <p></p>
+            <h1>Bienvenue a la carte mentale !</h1>
+            <p>Explorez notre carte mentale.</p>
         </div>        
     </div>
-    
+
+    <!-- Conteneur pour l'image, centré au milieu -->
+    <div class="image-container">
+        <img src="carte.jpeg" alt="Carte Mentale Image">
+    </div>
 </body>
 </html>
